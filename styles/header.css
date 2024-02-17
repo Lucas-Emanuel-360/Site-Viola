@@ -131,7 +131,7 @@ html {
 
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 1px) and (max-width:1024px) {
   .nav-items {
     position: fixed;
     top: 0;
@@ -167,6 +167,13 @@ html {
     padding: 0 20px;
     font-size: 30px;
     cursor: pointer;
+  }
+
+  .icons{
+    margin-left: 35%;
+    margin-right: 35%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

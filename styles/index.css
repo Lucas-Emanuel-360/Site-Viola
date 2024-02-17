@@ -134,3 +134,72 @@ h2{
   
 }
 
+.about-mobile{
+  display: none;
+}
+.team-mobile{
+  display: none;
+}
+.works-mobile{
+  display: none;
+}
+@media only screen and (min-width: 1px) and (max-width:1024px){
+
+.veja-mais{
+  padding: 10px 20px;
+}
+
+.section {
+  display: none;
+}
+.center-button{
+  background-color: rgb(255, 241, 213);
+  padding: 50px;
+  margin-bottom: 0px;
+}
+  .about-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  .team-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  .works-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .inicio img {
+    margin-top: 5%;
+    margin-left: 3.5%;
+    width: 93%;
+    height: 40%;
+    opacity: 0.7;
+  }
+  
+  .inicio p {
+    top: 0%; /* Posiciona o texto no meio verticalmente */
+    left: 50%; /* Posiciona o texto no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; /* Negrito */
+    font-size: 24px; /* Tamanho da fonte */
+    display: none;
+  }
+  
+  .inicio p:nth-child(3) {
+    display: inline;
+    margin-right: -160px;
+    top: 60%; /* Ajusta a posição vertical */
+    font-weight: 300; /* Deixe a fonte mais fina */
+    font-size: 15px; /* Reduza o tamanho da fonte */
+  }
+}
