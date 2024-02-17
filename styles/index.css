@@ -1,0 +1,136 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Definindo estilos globais */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "raleway", sans-serif;
+  background-color: whitesmoke;
+  margin: 0; /* Removendo margens padrão do corpo */
+}
+
+/* Estilizando as imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para a seção de início */
+.inicio {
+  position: relative;
+}
+
+.inicio img {
+  margin-top: 5%;
+  margin-left: 3.5%;
+  width: 93%;
+  height: 500px;
+  opacity: 0.7;
+}
+
+.inicio p {
+  position: absolute;
+  top: 50%; /* Posiciona o texto no meio verticalmente */
+  left: 50%; /* Posiciona o texto no meio horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza o texto */
+  color: white; /* Cor do texto */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; /* Negrito */
+  font-size: 32px; /* Tamanho da fonte */
+}
+
+.inicio p:nth-child(3) {
+  top: 60%; /* Ajusta a posição vertical */
+  font-weight: 300; /* Deixe a fonte mais fina */
+  font-size: 24px; /* Reduza o tamanho da fonte */
+}
+
+.veja-mais {
+  position: absolute;
+  top: 75%; /* Ajuste a posição vertical conforme necessário */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  border: none; /* Removendo a borda */
+  padding: 15px 25px; /* Aumentando o tamanho do botão */
+  font-family: 'Raleway', sans-serif; /* Usando a fonte Raleway */
+  font-weight: thin;
+  text-decoration: none; /* Removendo o sublinhado padrão de links */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.veja-mais:hover {
+  background-color: #333333;
+  color: #f5ca5e;
+}
+
+/* Estilos para as seções */
+.section {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinhando os itens ao início verticalmente */
+  margin: 50px;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-top: 5%;
+}
+
+.left-text, .right-text {
+  width: 35%;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+
+.left-image, .right-image {
+  width: 35%;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+
+.left-text {
+  margin-bottom: 10px; /* Adicionando margem inferior */
+}
+
+.right-text {
+  margin-top: 10px; /* Adicionando margem superior */
+}
+
+.center-button {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%; /* Adicionando margem inferior para separar do conteúdo anterior */
+}
+
+.button {
+  background-color: #333333;
+  color: #f5ca5e;
+  border: none;
+  padding: 15px 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: thin;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #f5ca5e;
+  color: #333333 ;
+} 
+
+h2{
+  text-decoration: underline;
+  
+}
+
