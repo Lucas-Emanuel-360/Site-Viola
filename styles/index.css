@@ -34,43 +34,51 @@ img {
   margin-top: 5%;
   margin-left: 3.5%;
   width: 93%;
-  height: 500px;
-  opacity: 0.7;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 14%;
+  left: 3.5%;
+  width: 93%; /* Cobrindo toda a largura do contêiner pai */
+  height: 85.6%; /* Cobrindo toda a altura do contêiner pai */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
 }
 
 .inicio p {
   position: absolute;
-  top: 50%; /* Posiciona o texto no meio verticalmente */
-  left: 50%; /* Posiciona o texto no meio horizontalmente */
-  transform: translate(-50%, -50%); /* Centraliza o texto */
-  color: white; /* Cor do texto */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400; /* Negrito */
-  font-size: 32px; /* Tamanho da fonte */
+  font-weight: 400;
+  font-size: 32px;
 }
 
 .inicio p:nth-child(3) {
-  top: 60%; /* Ajusta a posição vertical */
-  font-weight: 300; /* Deixe a fonte mais fina */
-  font-size: 24px; /* Reduza o tamanho da fonte */
+  top: 60%;
+  font-weight: 300;
+  font-size: 24px;
 }
 
-.veja-mais {
+.inicio .veja-mais {
   position: absolute;
-  top: 75%; /* Ajuste a posição vertical conforme necessário */
-  left: 50%; /* Centraliza horizontalmente */
+  top: 75%;
+  left: 50%;
   transform: translateX(-50%);
   background-color: white;
   color: black;
-  border: none; /* Removendo a borda */
-  padding: 15px 25px; /* Aumentando o tamanho do botão */
-  font-family: 'Raleway', sans-serif; /* Usando a fonte Raleway */
+  border: none;
+  padding: 15px 25px;
+  font-family: 'Raleway', sans-serif;
   font-weight: thin;
-  text-decoration: none; /* Removendo o sublinhado padrão de links */
+  text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.veja-mais:hover {
+.inicio .veja-mais:hover {
   background-color: #333333;
   color: #f5ca5e;
 }
@@ -95,6 +103,7 @@ img {
 
 .left-image, .right-image {
   width: 35%;
+  height: auto;
   margin-left: 125px;
   margin-right: 125px;
 }
@@ -175,15 +184,6 @@ h2{
     align-items: center;
     margin: 15px;
   }
-
-  .inicio img {
-    margin-top: 5%;
-    margin-left: 3.5%;
-    width: 93%;
-    height: 40%;
-    opacity: 0.7;
-  }
-  
   .inicio p {
     top: 0%; /* Posiciona o texto no meio verticalmente */
     left: 50%; /* Posiciona o texto no meio horizontalmente */
@@ -202,4 +202,25 @@ h2{
     font-weight: 300; /* Deixe a fonte mais fina */
     font-size: 15px; /* Reduza o tamanho da fonte */
   }
+  .inicio {
+    position: relative;
+  }
+  
+  .inicio img {
+    margin-top: 5%;
+    margin-left: 3.5%;
+    width: 93%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 14%;
+    left: 3.5%;
+    width: 93%; /* Cobrindo toda a largura do contêiner pai */
+    height: 83%; /* Cobrindo toda a altura do contêiner pai */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  }
+
+  
 }
